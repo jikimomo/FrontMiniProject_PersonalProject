@@ -1,0 +1,17 @@
+/* @charset "UTF_8"; */
+
+.container {
+    margin: 10px auto;
+}
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(150px, auto));
+}
+.header {
+    background-color: lightcyan; 
+}
+
+#siteName {
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+.search {
+    padding: 50px;
+}
+.inputBox {
+    width: 180px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 8px;
+}
+.radio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+form > button {
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+}
+.content{
+    width: 250px;
+    height: 250px;
+}
+
