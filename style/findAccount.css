@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+    /* border: 1px solid grey; */
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.minititle {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.inputBox {
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.inputBox2 {
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

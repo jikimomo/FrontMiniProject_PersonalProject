@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <!-- <style type="text/css">
+    </style> -->
+    <link rel="stylesheet" type="text/css" href="style/headerClean.css">
+    <link rel="stylesheet" type="text/css" href="style/signUp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <haeder class="header">
+                <div id="siteName">
+                    사이트 이름
+                </div>
+            </haeder>
+            <section>
+                <form method="post">
+                    <div class="box">
+                        <div class="boundary">
+                            <fieldset>
+                                <!-- <legend>기본 정보</legend> -->
+                                <div>
+                                    <label for="id">아이디<input type="text" name="id" class="inputBox" id="id"></label><br>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+
+                                <div>
+                                    <label for="password">비밀번호<input type="password" name="password" class="inputBox" id="password"></label><br>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+
+                                <div>
+                                    <label for="checkPW">비밀번호 확인<input type="password" name="checkPW" class="inputBox" id="checkPW"></label><br>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+                            </fieldset>
+                        
+                            <fieldset>
+                                <!-- <legend>회원 정보</legend> -->
+                                <div>
+                                    <label for="name">이름<input type="text" name="name" class="inputBox" id="name"></label><br>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+
+                                <div>
+                                    <label for="email">이메일<input type="text" name="email" class="inputBox2" id="email"></label>
+                                    @ <select name="emailAdd" class="inputBox2">
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="google.com">gmail.com</option>
+                                        <option value="naver.com" selected>naver.com</option>
+                                    </select><br>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+
+                                <div>
+                                    <label for="phone">전화번호<input type="text" name="phone" class="inputBox" id="phone"></label><br>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+
+                                <div>
+                                    <label for="adrress">주소<input type="text" name="address" class="inputBox" class="inputBox" id="address" readonly></label>
+                                    <span class="alertMessage">alert message</span>
+                                </div>
+                            </fieldset>
+                            <button type="button">취소</button>
+                            <button type="submit">가입하기</button>
+                        </div>
+                    </div>
+                </form>  
+            </section>
+        </div>
+    </div>
+</body>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    document.getElementById('address').addEventListener("click", function(){
+        new daum.Postcode({
+            oncomplete: function(data) {
+                document.getElementById('address').value = data.roadAddress;
+            }
+        }).open();
+    });
+</script>
+<script type="text/javascript" src="script/signUp.js"></script>
+</html>
