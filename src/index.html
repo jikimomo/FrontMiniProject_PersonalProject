@@ -50,67 +50,46 @@
                         <label>품종<br>
                             <!-- 동물별로 품종 나누기 -->
                             <select name="breed" class="inputBox" id="breed">
-                                <option>전체</option>
-                                <option>노르웨이 숲</option>
-                                <option>러시안 블루</option>
-                                <option>렉돌</option>
-                                <option>먼치킨</option>
-                                <option>뱅갈</option>
-                                <option>브리티쉬 숏헤어</option>
-                                <option>사바나캣</option>
-                                <option>샴</option>
-                                <option>셀커크 렉스</option>
-                                <option>스코티쉬 폴드</option>
-                                <option>스핑크스</option>
-                                <option>아메리칸 숏헤어</option>
-                                <option>아메리칸컬</option>
-                                <option>아비시니안</option>
-                                <option>친칠라</option>
-                                <option>터키쉬 밴</option>
-                                <option>터키쉬 앙고라</option>
-                                <option>페르시안</option>
-                                <option>하바나</option>
-                                <option>한국 고양이</option>
-                                <option>그 외 고양이</option>
+                                <option value="all">전체</option>
                             </select>
                         </label><br>
                         <div class="radio">
                             성별<br>
-                                <label for="allgender"><input type="radio" name="gender" value="allgender" id="allgender">상관없음</label>
+                                <label for="allgender"><input type="radio" name="gender" value="allgender" id="allgender" checked>상관없음</label>
                                 <label for="male"><input type="radio" name="gender" value="male" id="male">수컷</label>
                                 <label for="female"><input type="radio" name="gender" value="female" id="female">암컷</label>
                             <br>
                         </div>
                         <div class="radio">
                             중성화유무<br>
-                                <label for="all"><input type="radio" name="neutral" value="all" id="all">상관없음</label>
+                                <label for="all"><input type="radio" name="neutral" value="all" id="all" checked>상관없음</label>
                                 <label for="yes"><input type="radio" name="neutral" value="yes" id="yes">유</label>
                                 <label for="no"><input type="radio" name="neutral" value="no" id="no">무</label>
                             <br>
                         </div>
                         <label>지역<br>
                             <select name="region" class="inputBox" id="region">
-                                <option>전체</option>
-                                <option>서울시</option>
-                                <option>인천시</option>
-                                <option>대전시</option>
-                                <option>광주시</option>
-                                <option>대구시</option>
-                                <option>울산시</option>
-                                <option>부산시</option>
-                                <option>세종시</option>
-                                <option>경기도</option>
-                                <option>강원도</option>
-                                <option>충청남도</option>
-                                <option>충청북도</option>
-                                <option>전라남도</option>
-                                <option>전라북도</option>
-                                <option>경상남도</option>
-                                <option>경상북도</option>
-                                <option>제주도</option>
+                                <option value="all" selected>전체</option>
+                                <option value="seoul">서울시</option>
+                                <option value="incheon">인천시</option>
+                                <option value="daejeon">대전시</option>
+                                <option value="gwangju">광주시</option>
+                                <option value="daegu">대구시</option>
+                                <option value="ulsan">울산시</option>
+                                <option value="busan">부산시</option>
+                                <option value="sejong">세종시</option>
+                                <option value="kyungki">경기도</option>
+                                <option value="kangwon">강원도</option>
+                                <option value="chungnam">충청남도</option>
+                                <option value="chungbok">충청북도</option>
+                                <option value="jeonnam">전라남도</option>
+                                <option value="jeonbok">전라북도</option>
+                                <option value="kyungnam">경상남도</option>
+                                <option value="kyungbok">경상북도</option>
+                                <option value="jeju">제주도</option>
                             </select>
                         </label><br>
-                        <button type="button">찾기</button>
+                        <button type="button" id="searchBtn">찾기</button>
                     </form>
                 </div>
             </nav>
@@ -130,16 +109,22 @@
                         <img src="images/introImage.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/cat1.jpg" width="100%" height="100%">
+                        <img src="images/hamster1.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/cat2.jpg" width="100%" height="100%">
+                        <img src="images/cat4.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/cat3.jpg" width="100%" height="100%">
+                        <img src="images/dog2.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/introImage.jpg" width="100%" height="100%">
+                        <img src="images/dog3.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="content">
+                        <img src="images/cat5.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="content">
+                        <img src="images/hedgehog1.jpg" width="100%" height="100%">
                     </div>
                 </div>
             </section>
@@ -148,5 +133,6 @@
             </footer>
         </div>
     </div>
+    <script type="text/javascript" src="script/index.js"></script>
 </body>
 </html>
