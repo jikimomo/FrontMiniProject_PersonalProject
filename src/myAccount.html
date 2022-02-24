@@ -14,25 +14,35 @@
     <div class="container">
         <div class="wrapper">
             <haeder class="header">
-                <div id="siteName">
-                    사이트 이름
-                </div>
-                <div id="back">
-                    <a href="index.html">이전으로 돌아가기</a>
+                <div class="siteNameBox">
+                    <div id="logo">
+                        <img src="images/logo.jpg">
+                    </div>
+                    <div id="siteName">우리집으로</div>
+                    <div id="siteInfo">동물 무료 입양 사이트</div>
                 </div>
             </haeder>
+
             <nav class="nav">
                 <!-- menu -->
-                <ul id="menu">
-                    <li id="current">내 개인 정보</li>
-                    <li><a href="myUpload.html">내가 올린 게시물</a></li>
-                    <li><a href="mySaved.html">내가 저장한 게시물</a></li>
+                <ul class="menu">
+                    <li class="tabLink current" id="tab1">내 개인 정보</li>
+                    <li class="tabLink" id="tab2">내가 올린 게시물</li>
+                    <li class="tabLink" id="tab3">내가 저장한 게시물</li>
                 </ul>
             </nav>
             <section class="section">
-                내 정보
+                <div class="tabContent current" id="tab1Content">
+                    <h2>내 정보</h2>
+                </div>
+                <div class="tabContent" id="tab2Content">
+                </div>
+                <div class="tabContent" id="tab3Content">
+                </div>
             </section>
         </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="script/myAccount.js"></script>
 </body>
 </html>

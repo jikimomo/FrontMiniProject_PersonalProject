@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var data = [
-        {id: "aaaa", password: "aaaa", name: "nolbu", email: "aaaa@naver.com", phone: "01012345678", address: "서울 강남대로 11"},
-        {id: "bbbb", password: "bbbb", name: "hungbu", email: "bbbb@daum.net", phone: "01098765432", address: "서울 강남대로 22"}
+        {id: "aaaa", password: "aaaaaaaaaa", name: "nolbu", email: "aaaa@naver.com", phone: "01012345678", address: "서울 강남대로 11"},
+        {id: "bbbb", password: "bbbbbbbbbb", name: "hungbu", email: "bbbb@daum.net", phone: "01098765432", address: "서울 강남대로 22"}
     ];
 
     // alertMessage 안 보이게 하기
@@ -93,5 +93,9 @@ $(document).ready(function () {
                 $(location).attr('href', 'searchPassword.html');
             }
         }
+    });
+
+    $('.siteNameBox').click(function() {
+        $(location).attr('href', 'index.html');
     });
 });

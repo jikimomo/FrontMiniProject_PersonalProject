@@ -3,6 +3,31 @@
     padding: 0px;
 }
 
+.siteNameBox {
+    margin: auto;
+    margin-top: 30px;
+    width: 320px;
+    cursor: pointer;
+}
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+#logo > img {
+    width: 70px;
+}
+#siteName {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(80, 190, 130);
+    font-size: 50px;
+}
+#siteInfo{
+    text-align: center;
+    color: rgb(80, 190, 130);
+}
+
 .box {
     width: 450px;
     margin: auto;

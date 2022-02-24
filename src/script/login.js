@@ -1,8 +1,9 @@
 (function(){
     var data = [
-        {id: 'asdf', password: 'asdf'},
-        {id: '1234', password: '1234'},
-        {id: 'aaaa', password: 'aaaa'}
+        {id: 'asdf', password: 'asdfasdfas'},
+        {id: '1234', password: '1234567890'},
+        {id: 'aaaa', password: 'aaaaaaaaaa'},
+        {id: 'bbbb', password: 'bbbbbbbbbb'}
     ];
 
     function loadEvent() {
@@ -49,6 +50,11 @@
                     id.focus();
                 }
             }
+        });
+
+        const logo = document.querySelector('div[class="siteNameBox"]');
+        logo.addEventListener('click', function(){
+            location.href = "index.html";
         });
     };
 

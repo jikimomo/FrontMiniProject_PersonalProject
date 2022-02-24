@@ -4,13 +4,67 @@
 }
 
 a {
+    margin: 30px;
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+}
+a:visited {
+    margin: 30px;
+    font-size: 18px;
     color: gray;
     text-decoration: none;
 }
 
-a:visited {
-    color: gray;
-    text-decoration: none;
+#buttonBox{
+    display: flex;
+}
+#myButton {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#uploadButton {
+    width: 150px;
+    height: 40px;
+    margin: 10px 20px 0px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(130, 200, 130);
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.siteNameBox {
+    margin: auto;
+    margin-top: 30px;
+    width: 320px;
+    cursor: pointer;
+}
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+#logo > img {
+    width: 70px;
+}
+#siteName {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(80, 190, 130);
+    font-size: 50px;
+}
+#siteInfo {
+    text-align: center;
+    color: rgb(80, 190, 130);
 }
 
 .search {
@@ -35,6 +89,7 @@ form > button {
     margin-left: 20px;
     border: none;
     border-radius: 5px;
+    background-color: rgb(230, 230, 230);
     cursor: pointer;
 }
 
@@ -45,5 +100,7 @@ form > button {
 .content{
     width: 250px;
     height: 250px;
+    margin: 30px;
+    cursor: pointer;
 }
 

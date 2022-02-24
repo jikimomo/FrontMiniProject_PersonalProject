@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <!-- <style type="text/css">
-    </style> -->
     <link rel="stylesheet" type="text/css" href="style/header.css">
     <link rel="stylesheet" type="text/css" href="style/index.css">
 </head>
@@ -14,21 +12,23 @@
     <div class="container">
         <div class="wrapper">
             <haeder class="header">
-                <!-- 로고, 추가 버튼 -->
-                <div id="siteName">
-                    사이트 이름
+                <div class="siteNameBox">
+                    <div id="logo">
+                        <img src="images/logo.jpg">
+                    </div>
+                    <div id="siteName">우리집으로</div>
+                    <div id="siteInfo">동물 무료 입양 사이트</div>
                 </div>
+                
                 <div id="loginButton">
                     <a href='login.html'>로그인</a>
                 </div>
                 <div id="signUpButton">
                     <a href="signUp.html">회원가입</a>
                 </div>
-                <div id="uploadButton">
-                    <button type="button" onclick="location.href='upload.html'">글 올리기</button>
-                </div>
-                <div>
-                    <a href="myAccount.html">내 계정</a>
+                <div id="buttonBox">
+                    <img src="images/my.png" id="myButton" onclick="location.href='myAccount.html'">
+                    <button type="button" id="uploadButton" onclick="location.href='upload.html'">입양글 올리기</button>
                 </div>
             </haeder>
             <nav class="nav">
@@ -121,19 +121,25 @@
                         <img src="images/cat1.jpg" width="100%" height="100%" onclick="location.href='content.html'">
                     </div>
                     <div class="content">
-                        <img src="images/cat1.jpg" width="100%" height="100%">
+                        <img src="images/cat2.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="content">
+                        <img src="images/cat3.jpg" width="100%" height="100%">
+                    </div>
+                    <div class="content">
+                        <img src="images/introImage.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
                         <img src="images/cat1.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/cat1.jpg" width="100%" height="100%">
+                        <img src="images/cat2.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/cat1.jpg" width="100%" height="100%">
+                        <img src="images/cat3.jpg" width="100%" height="100%">
                     </div>
                     <div class="content">
-                        <img src="images/cat1.jpg" width="100%" height="100%">
+                        <img src="images/introImage.jpg" width="100%" height="100%">
                     </div>
                 </div>
             </section>

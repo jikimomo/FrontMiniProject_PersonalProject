@@ -9,9 +9,6 @@
     grid-template-rows: repeat(2, minmax(150px, auto));
 }
 .header {
-    background-color: lightcyan; 
-}
-
-#siteName {
-    text-align: center;
+    /* background-color: lightcyan;  */
+    border-bottom: 1px solid lightgray;
 }
