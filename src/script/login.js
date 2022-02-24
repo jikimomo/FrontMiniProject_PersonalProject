@@ -13,6 +13,8 @@
         btn.addEventListener('click', function(evt){
             const id = document.querySelector('input[name="id"]');
             const password = document.querySelector('input[name="password"]');
+            message.style.display = 'none';
+
             if(!id.value){
                 evt.preventDefault();
                 message.style.display = 'block';
@@ -26,18 +28,26 @@
                 password.focus();
             }
             else{
+                evt.preventDefault();
+                var flag = false;
                 data.map((item, index) => {
                     if(item.id===id.value && item.password===password.value){
-                        message.style.display = 'none';
-                        location.href = "index.html";
+                        flag = true;
                     }
                 });
-                evt.preventDefault();
-                message.style.display = 'block';
-                message.innerHTML = "아이디 또는 비밀번호를 잘못 입력했습니다.";
-                id.value = '';
-                password.value = '';
-                id.focus();
+                
+                if(flag){
+                    message.style.display = 'none';
+                    location.href = "index.html";
+                }
+                else {
+                    evt.preventDefault();
+                    message.style.display = 'block';
+                    message.innerHTML = "아이디 또는 비밀번호를 잘못 입력했습니다.";
+                    id.value = '';
+                    password.value = '';
+                    id.focus();
+                }
             }
         });
     };

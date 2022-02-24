@@ -23,32 +23,50 @@
                 <div class="box">
                     <div class="minititle">아이디 찾기</div>
                     <fieldset>
-                        <!-- <legend>아이디 찾기</legend> -->
-                        <label for="name">이름<input type="text" class="inputBox" id="name"></label><br>
-                        <label for="email">이메일<input type="text" class="inputBox2" id="email"></label>
-                        @<select class="inputBox2">
-                            <option value="naver.com">naver.com</option>
-                            <option value="daum.net">daum.net</option>
-                            <option value="gmail.com">gmail.com</option>
-                        </select><br>          
+                        <div>
+                            <label for="name">이름<input type="text" class="inputBox" id="name1"></label><br>
+                            <span class="alertMessage">alert message</span>
+                        </div>
+
+                        <div>
+                            <label for="email">이메일<input type="text" class="inputBox2" id="email1"></label>
+                            @<select class="inputBox2" id="emailAdd1">
+                                <option value="daum.net">daum.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="naver.com" selected>naver.com</option>
+                            </select><br>
+                            <span class="alertMessage">alert message</span>
+                        </div>
+                        <div class="alertMessage2" id="alertMessageId">alert message</div>
                     </fieldset>
-                    <button onclick="location.href='searchId.html'">찾기</button>
+                    <button type="submit" id="findIdBtn">찾기</button>
                 </div>
             
                 <div class="box">
                     <div class="minititle">비밀번호 찾기</div>
                     <fieldset>
-                        <!-- <legend>비밀번호 찾기</legend> -->
-                        <label for="id">아이디<input type="text" class="inputBox" id="id"></label><br>
-                        <label for="name">이름<input type="text" class="inputBox" id="name"></label><br>
-                        <label for="email">이메일<input type="text" class="inputBox2" id="email"></label>
-                        @<select class="inputBox2">
-                            <option value="naver.com">naver.com</option>
-                            <option value="daum.net">daum.net</option>
-                            <option value="gmail.com">gmail.com</option>
-                        </select><br>      
+                        <div>
+                            <label for="id">아이디<input type="text" class="inputBox" id="id2"></label><br>
+                            <span class="alertMessage">alert message</span>
+                        </div>
+
+                        <div>
+                            <label for="name">이름<input type="text" class="inputBox" id="name2"></label><br>
+                            <span class="alertMessage">alert message</span>
+                        </div>
+
+                        <div>
+                            <label for="email">이메일<input type="text" class="inputBox2" id="email2"></label>
+                            @<select class="inputBox2" id="emailAdd2">
+                                <option value="daum.net">daum.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="naver.com" selected>naver.com</option>
+                            </select><br>   
+                            <span class="alertMessage">alert message</span>
+                        </div>
+                        <div class="alertMessage2" id="alertMessagePw">alert message</div>
                     </fieldset>
-                    <button onclick="location.href='searchPassword.html'">찾기</button>
+                    <button type="submit" id="findPwBtn">찾기</button>
                 </div>
             </section>
         </div>
