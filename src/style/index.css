@@ -102,5 +102,10 @@ form > button {
     height: 250px;
     margin: 30px;
     cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 3px;
 }
-
+.content > img {
+    width: 100%;
+    height: 100%;
+}

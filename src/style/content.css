@@ -35,6 +35,7 @@ section {
 .saved > img {
     display: flex;
     margin-left: auto;
+    cursor: pointer;
 }
 .info {
     text-align: center;

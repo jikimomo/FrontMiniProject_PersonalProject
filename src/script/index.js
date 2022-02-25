@@ -1,5 +1,17 @@
 (function(){
 
+    function makeTemplate(data){
+        var contentTemplate = '<div class="content"><img src="${imageSrc}" onclick="location.href=\'content.html\'"></div>';
+        
+        var contents = document.querySelector('div[class="contents"]');
+        var dom = "";
+        data.forEach(function(item){
+            var tmp = contentTemplate;
+            dom += tmp.replace('${imageSrc}', item.src);
+        });
+        contents.innerHTML = dom;
+    }
+
     function loadEvent() {
         //data
         const data = [
@@ -23,11 +35,15 @@
                     "스핑크스", "아메리칸 숏헤어", "아메리칸컬", "아비시니안", "친칠라", "터키쉬 밴", "터키쉬 앙고라", "페르시안", "하바나", "한국 고양이", "그 외 고양이"];
         const hamster = ["드워프 햄스터", "골든 햄스터"];
 
-        //select
+        //select element
         var selectAnimal = document.querySelector('select[name="animal"]');
         var selectBreed = document.querySelector('select[name="breed"]');
         var selectRegion = document.querySelector('select[name="region"]');
 
+        //초기 화면 
+        makeTemplate(data);
+
+        //동물별로 품종 띄우기
         selectAnimal.addEventListener('change', function(){
             var currentAnimal = [];
             if(selectAnimal.options[selectAnimal.selectedIndex].value === "dog"){
@@ -56,7 +72,7 @@
             }
         });
 
-        //button change event
+        //검색 버튼 이벤트
         var searchBtn = document.getElementById('searchBtn');
         searchBtn.addEventListener('click', function() {
             //각 value
@@ -67,16 +83,14 @@
             var region = selectRegion.options[selectRegion.selectedIndex].value;
             
             var result = data.filter(function(item){
-                //all인경우를 해야함...
-                if(item.animal===animal && item.breed===breed && item.gender===gender && item.neutral===neutral && item.region===region){
-                    console.log(item.src);
+                if((item.animal===animal || animal==="all") && (item.breed===breed || breed==="all") && (item.gender===gender || gender==="allgender") && (item.neutral===neutral || neutral==="all") && (item.region===region || region==="all")){
                     return true;
                 }
             });
-            console.log(result);
+            
+            makeTemplate(result);
         });
-        
-    };
+    }
 
     window.addEventListener('load', loadEvent);
 })();
