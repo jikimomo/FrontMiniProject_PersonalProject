@@ -26,6 +26,7 @@ a:visited {
     margin-bottom: 10px;
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 #uploadButton {
     width: 150px;
@@ -45,7 +46,7 @@ a:visited {
 .siteNameBox {
     margin: auto;
     margin-top: 30px;
-    width: 320px;
+    width: 340px;
     cursor: pointer;
 }
 #logo {
@@ -60,11 +61,12 @@ a:visited {
     display: inline-block;
     vertical-align: middle;
     color: rgb(80, 190, 130);
-    font-size: 50px;
+    font-size: 60px;
 }
 #siteInfo {
     text-align: center;
     color: rgb(80, 190, 130);
+    font-size: 20px;
 }
 
 .search {
